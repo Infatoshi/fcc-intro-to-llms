@@ -1,4 +1,4 @@
-# Building LLMs from Scratch
+# FreeCodeCamp - Building LLMs from Scratch
 
 ## All the links you should need are in this repo. I will add detailed explainations as questions and issues are posted.
 

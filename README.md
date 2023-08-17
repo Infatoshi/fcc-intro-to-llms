@@ -1,6 +1,6 @@
 # FreeCodeCamp - Building LLMs from Scratch
 
-## All the links you should need are in this repo. I will add detailed explainations as questions and issues are posted.
+## All the links you should need are in this repo. I will add detailed explanations as questions and issues are posted.
 
 ## Visual Studio 2022 (for lzma compression algo) - https://visualstudio.microsoft.com/downloads/
 
@@ -12,6 +12,10 @@ My YouTube Channel - https://www.youtube.com/channel/UCjlt_l6MIdxi4KoxuMjhYxg
 How to SSH from Mac to Windows - https://www.youtube.com/watch?v=7hBeAb6WyIg&t=
 
 How to Setup Jupyter Notebooks in 5 minutes or less - https://www.youtube.com/watch?v=eLmweqU5VBA&t=
+
+Linkedin - https://www.linkedin.com/in/elliot-arledge-a392b7243/
+
+Join My Discord Server - https://discord.gg/pV7ByF9VNm
 
 ## Research Papers:
 Attention is All You Need - https://arxiv.org/pdf/1706.03762.pdf

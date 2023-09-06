@@ -1,5 +1,7 @@
 # FreeCodeCamp - Building LLMs from Scratch
 
+If you don't have an NVIDIA GPU, then the `device` parameter will default to `'cpu'` since `device = 'cuda' if torch.cuda.is_available() else 'cpu'`
+
 ## All the links you should need are in this repo. I will add detailed explanations as questions and issues are posted.
 
 ## Visual Studio 2022 (for lzma compression algo) - https://visualstudio.microsoft.com/downloads/

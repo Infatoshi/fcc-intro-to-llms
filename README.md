@@ -13,7 +13,7 @@ If you don't have an NVIDIA GPU, then the `device` parameter will default to `'c
 ## OpenWebText Download - https://skylion007.github.io/OpenWebTextCorpus/
 
 ## Socials
-Come settle in the Neural Nest (90% OFF) - https://www.skool.com/ai-programming-7722?invite=22c41293cb9946008981fca5637ca867
+Twitter / X - https://twitter.com/elliotarledge
 
 My YouTube Channel - https://www.youtube.com/channel/UCjlt_l6MIdxi4KoxuMjhYxg
 

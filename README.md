@@ -1,4 +1,4 @@
-# FreeCodeCamp - Building LLMs from Scratch
+# [FreeCodeCamp - Building LLMs from Scratch](https://www.youtube.com/watch?v=UU1WVnMk4E8)
 
 ## Google Colab for those who don't have a GPU: https://colab.research.google.com/drive/1_7TNpEEl8xjHlr9JzKbK5AuDKXwAkHqj?usp=sharing
 

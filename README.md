@@ -25,6 +25,8 @@ Linkedin - https://www.linkedin.com/in/elliot-arledge-a392b7243/
 
 Join My Discord Server - https://discord.gg/pV7ByF9VNm
 
+Schedule a 1-on-1: https://calendly.com/elliot-ayxc/60min
+
 ## Research Papers:
 Attention is All You Need - https://arxiv.org/pdf/1706.03762.pdf
 

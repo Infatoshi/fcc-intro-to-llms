@@ -11,7 +11,6 @@ If you don't have an NVIDIA GPU, then the `device` parameter will default to `'c
 ## Visual Studio 2022 (for lzma compression algo) - https://visualstudio.microsoft.com/downloads/
 
 ## OpenWebText Download
-
 - https://skylion007.github.io/OpenWebTextCorpus/
 - if this doesn't work, default to the wizard of oz mini dataset for training / validation
 

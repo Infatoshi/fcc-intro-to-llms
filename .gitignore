@@ -1,5 +1,7 @@
 model-01.pkl
 train_split.txt
+specdec
+.gitignore
 val_split.txt
 vocab.txt
 openweb-text-hf.py

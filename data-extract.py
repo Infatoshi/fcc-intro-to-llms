@@ -1,8 +1,8 @@
 import os
 import lzma
 from tqdm import tqdm
-from multiprocessing import Pool, cpu_count
 import concurrent.futures
+import random
 
 def process_file(args):
     directory, filename, output_file, vocab = args
@@ -19,7 +19,7 @@ def xz_files_in_dir(directory):
 
 def process_files_in_parallel(files, folder_path, output_file):
     vocab = set()
-    with concurrent.futures.ProcessPoolExecutor(max_workers=cpu_count()) as executor:
+    with concurrent.futures.ProcessPoolExecutor(max_workers=4) as executor:
         args = [(folder_path, filename, output_file, vocab) for filename in files]
         for characters in tqdm(executor.map(process_file, args), total=len(files)):
             vocab.update(characters)
@@ -37,15 +37,20 @@ split_index = int(total_files * 0.9)  # 90% for training
 files_train = files[:split_index]
 files_val = files[split_index:]
 
+# Sampling a hundredth of the files for each split
+sample_rate = 0.01 # 1% of 40GB of text is more realistic for testing purposes
+files_train_sampled = random.sample(files_train, max(1, int(len(files_train) * sample_rate)))
+files_val_sampled = random.sample(files_val, max(1, int(len(files_val) * sample_rate)))
+
 # Ensure output files are empty before appending
 open(output_file_train, 'w').close()
 open(output_file_val, 'w').close()
 
-# Process the training files
-vocab_train = process_files_in_parallel(files_train, folder_path, output_file_train)
+# Process the sampled training files
+vocab_train = process_files_in_parallel(files_train_sampled, folder_path, output_file_train)
 
-# Process the validation files
-vocab_val = process_files_in_parallel(files_val, folder_path, output_file_val)
+# Process the sampled validation files
+vocab_val = process_files_in_parallel(files_val_sampled, folder_path, output_file_val)
 
 # Combine vocabularies (if needed) and write to vocab.txt
 vocab = vocab_train.union(vocab_val)
